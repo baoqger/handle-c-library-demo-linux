@@ -5,7 +5,9 @@ CFLAGS =-Wall -Werror
 demo: 
 	cc -o my_app main.c $(CFLAGS) $(LIBS)
 
-gnudemo:
+# you can run this make command after you install 
+# the libraries into the default system directory: /usr/local/bin
+gnudemo: 
 	cc -o my_app main.c $(CFLAGS) $(GNULIBS)
 
 clean:
