@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include "libmy_shared.h"
-#include "libmy_static_a.h"
-#include "libmy_static_b.h"
+#include <libmy_shared.h>
+#include <libmy_static_a.h>
+#include <libmy_static_b.h>
 
 int main(){
 
