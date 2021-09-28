@@ -1,10 +1,7 @@
 #include <stdio.h>
-
-// forward declaration from my_lib.a
-int getRandInt();
-void printInteger(int *inValue);
-// forward declaration from my_shared_lib.so
-int negateIfOdd(int inValue);
+#include "libmy_shared.h"
+#include "libmy_static_a.h"
+#include "libmy_static_b.h"
 
 int main(){
 

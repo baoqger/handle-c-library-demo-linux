@@ -10,6 +10,10 @@
 CFLAGS =-Wall -Werror #-Wl,-rpath,$(shell pwd) 
 LIBS = -L./lib/shared -L./lib/static -lmy_shared -lmy_static
 
+INSTALL ?= install
+PREFIX ?= /usr/local
+LIBDIR = $(PREFIX)/lib
+INCLUDEDIR = $(PREFIX)/include
 
 all: main.o libmy_static.a libmy_shared.so
 	cc  -o my_app main.o $(CFLAGS) $(LIBS)
